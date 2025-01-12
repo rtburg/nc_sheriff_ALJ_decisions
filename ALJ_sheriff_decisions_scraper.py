@@ -114,7 +114,7 @@ try:
                             print(f"Successfully clicked 'View' image for link {index + 1}")
                             
                             # Wait for the PDF to download
-                            download_dir = "/Users/thornbur/Documents/research-temp/wc/Sheriff Education Training Standards Division/ALJ_decisions"
+                            download_dir = "~/Documents/Sheriff Education Training Standards Division/ALJ_decisions"
                             if wait_for_download(download_dir):
                                 # Rename the PDF file with the extracted name
                                 downloaded_file = max([f for f in os.listdir(download_dir)], key=lambda f: os.path.getctime(os.path.join(download_dir, f)))
